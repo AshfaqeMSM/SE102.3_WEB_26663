@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Change on Hover</title>
+</head>
+<body>
+    <h1>Change Background Color on Hover</h1>
+    <button id="redBtn">Red</button>
+    <button id="greenBtn">Green</button>
+    <button id="blueBtn">Blue</button>
+
+    <script>
+        const redButton = document.getElementById('redBtn');
+        const greenButton = document.getElementById('greenBtn');
+        const blueButton = document.getElementById('blueBtn');
+
+        redButton.addEventListener('mouseover', () => {
+            document.body.style.backgroundColor = 'red';
+        });
+
+        greenButton.addEventListener('mouseover', () => {
+            document.body.style.backgroundColor = 'green';
+        });
+
+        blueButton.addEventListener('mouseover', () => {
+            document.body.style.backgroundColor = 'blue';
+        });
+
+        redButton.addEventListener('mouseout', () => {
+            document.body.style.backgroundColor = '';
+        });
+
+        greenButton.addEventListener('mouseout', () => {
+            document.body.style.backgroundColor = '';
+        });
+
+        blueButton.addEventListener('mouseout', () => {
+            document.body.style.backgroundColor = '';
+        });
+    </script>
+</body>
+</html>
